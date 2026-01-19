@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+.p-checkbox .p-checkbox-icon {
+  display: none !important;
+}
+
+/* ===============================
+   DataTable container
+================================ */
+.p-datatable {
+  @apply text-sm text-gray-700 bg-white rounded-lg border border-gray-200 m-2;
+}
+
+/* ===============================
+   Header
+================================ */
+.p-datatable-thead > tr > th {
+  @apply bg-white text-gray-500 font-semibold uppercase text-xs tracking-wide
+         border-b border-gray-200 px-4 py-3 text-left;
+}
+
+/* ===============================
+   Body rows
+================================ */
+.p-datatable-tbody > tr {
+  @apply border-b border-gray-100 transition;
+}
+
+.p-datatable-tbody > tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.p-datatable-tbody > tr:hover {
+  @apply bg-gray-50;
+}
+
+/* ===============================
+   Body cells
+================================ */
+.p-datatable-tbody > tr > td {
+  @apply px-4 py-3 text-gray-700;
+}
+
+/* ===============================
+   Bold title column
+================================ */
+.p-datatable-tbody > tr > td:first-child + td {
+  @apply font-semibold text-gray-900;
+}
+
+/* ===============================
+   Checkbox column
+================================ */
+.p-datatable .p-selection-column {
+  @apply w-10 text-center;
+}
+
+/* Remove arrow icon in header */
+.p-datatable .p-selection-column .p-column-title {
+  display: none;
+}
+
+/* ===============================
+   Selected row
+================================ */
+.p-datatable-tbody > tr.p-highlight {
+  @apply bg-blue-50;
+}
+
+/* ===============================
+   Paginator
+================================ */
+.p-paginator {
+  @apply flex items-center gap-2 bg-white;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  @apply text-gray-600 border border-gray-300 rounded-md px-3 py-1 text-sm;
+}
+
+.p-paginator .p-paginator-pages .p-highlight {
+  @apply bg-blue-600 text-white border-blue-600;
+}
+
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+  @apply text-gray-600 border border-gray-300 rounded-md px-3 py-1;
+}
+
+.p-paginator .p-disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* ===============================
+   Page report text
+================================ */
+.p-paginator-current {
+  @apply text-sm text-gray-500;
+}
