@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { DataTable } from "primereact/datatable";
-import type { DataTablePageEvent } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router-dom";
